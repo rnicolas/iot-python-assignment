@@ -39,7 +39,7 @@ class MyServerProtocol(WebSocketServerProtocol):
     def onConnect(self, request):
         print("Client connecting: {0}".format(request.peer))
         # TODO Return a protocol here that matches the sender
-        return ""
+        return None
 
     async def onOpen(self):
         print("WebSocket connection open.")
